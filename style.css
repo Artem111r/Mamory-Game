@@ -1,15 +1,44 @@
+* h3{
+    margin: 0;
+    padding: 0;
+}
 
-#grid{
-    margin: auto;
-    width: 400px;
-    height: 300px;
+.game-wrapper {
+    padding-top: 30px;
     display: flex;
-    flex-wrap: wrap;
-} 
-.GameOver{
-    font-size: 64px;
-    font-weight: 700;
-    position: relative;
-    left: 50px;
-    top: 80px;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.game-container{
+    border: 1px solid black;
+ max-width: 405px;
+ padding: 0 15px 0 15px;
+
+}
+.game-title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.grid {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 405px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+@media(max-width:420px){
+    .grid{
+       max-width: 325px;
+    }
+}
+.GameOver {
+  font-size: 64px;
+  font-weight: 700;
+  position: relative;
 }
