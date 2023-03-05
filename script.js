@@ -65,7 +65,7 @@ function cardMatch(){
     }
 
     if(chosenCards[0] === chosenCards[1] & oneId !== twoId){
-        alert('Congratulate, you found match cards!')
+        // alert('Congratulate, you found match cards!')
         cardIMGs[chosenCardsIds[0]].setAttribute('src', 'images/white.png')
         cardIMGs[chosenCardsIds[1]].setAttribute('src', 'images/white.png')
         cardIMGs[chosenCardsIds[0]].removeEventListener('click', flipCard)
